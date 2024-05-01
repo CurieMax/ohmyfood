@@ -1,0 +1,153 @@
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 0;
+}
+
+
+/*Mobile Section*/
+@media (max-width: 768px) {
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo {
+    display: flex;
+    height: 63px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    height: 36px;
+    padding: 0px 10px 0px 16px;
+    justify-content: center;
+    
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 17px;
+    background-color: var(--Grey-2, #EAEAEA);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.location-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--Grey, #353535);
+}
+
+.global {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.explore {
+    display: flex;
+    height: 287px;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    
+}
+
+.explore .section-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.explore p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.btn-explore {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+
+}
+
+.btn-resto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    box-shadow: 0px 4px 10px 0px lightgray
+}
+
+.function {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.function .section-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 27px;
+}
+
+.function-list {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list {
+    display: flex;
+    width: 80%;
+}
+
+.btn-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #F6F6F6; 
+}
+
+.number {
+    display: flex;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+   
+}
+
+.number-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+}
