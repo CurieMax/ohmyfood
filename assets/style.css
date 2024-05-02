@@ -30,7 +30,6 @@ body {
 .logo {
     display: flex;
     height: 36px;
-    padding: 0px 10px 0px 16px;
     justify-content: center;
     
 }
@@ -41,7 +40,7 @@ body {
     height: 50px;
     gap: 17px;
     background-color: var(--Grey-2, #EAEAEA);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
 }
 
 .icon {
@@ -64,7 +63,7 @@ body {
 
 .explore {
     display: flex;
-    height: 287px;
+    height: auto;
     flex-direction: column;
     background-color: #F6F6F6;
     
@@ -88,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 27px;
-
+    margin-bottom: 50px;
 }
 
 .btn-resto {
@@ -96,22 +95,34 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
+    border: none;
     height: 50px;
     border-radius: 25px;
     background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    box-shadow: 0px 4px 10px 0px lightgray
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 18px;
+}
+
+.btn-resto h2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .function {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-bottom: 68px;
 }
 
 .function .section-title {
     display: flex;
     justify-content: flex-start;
-    margin-left: 27px;
+    margin-left: 20px;
+    margin-top: 48px;
 }
 
 .function-list {
@@ -123,15 +134,18 @@ body {
 .list {
     display: flex;
     width: 80%;
+    height: 72px;
 }
 
 .btn-list {
     display: flex;
     width: 100%;
-    justify-content: center;
+    border: none;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    background-color: #F6F6F6; 
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .number {
@@ -140,7 +154,8 @@ body {
     border-radius: 50%;
     width: 24px;
     height: 24px;
-   
+    justify-content: center;
+    align-items: center;
 }
 
 .number-list {
@@ -149,5 +164,125 @@ body {
     justify-content: center;
     color: white;
     
+}
+
+.txt-list {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Background, #F6F6F6);
+    padding-bottom: 50px;
+}
+
+.restaurant-title {
+    display: flex;
+    margin-top: 54px;
+    margin-left: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.restaurant-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.resto-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 20%;
+
+}
+
+.resto-card img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 231px;
+}
+
+.card-content {
+    display: flex;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: black;
+    margin-top: 16px;
+    margin-left: 13px;
+    margin-bottom: 0px;
+}
+
+.card-subtitle {
+    color: black;
+    margin-bottom: 12px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.like {
+    
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--Grey, #353535);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+}
+
+.footer-logo {
+    display: flex;
+    
+
+}
+
+.footer-logo .logo {
+    height: 20px;
+    margin-bottom: 16px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-lign {
+    display: flex;
+    height: 30px;
+
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
 }
 }
