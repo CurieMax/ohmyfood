@@ -38,9 +38,9 @@ body {
     display: flex;
     justify-content: center;
     height: 50px;
-    gap: 17px;
     background-color: var(--Grey-2, #EAEAEA);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    padding-left: 40px; 
 }
 
 .icon {
@@ -51,9 +51,18 @@ body {
 .location-text {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 16px;
     color: var(--Grey, #353535);
 }
+
+.location-text input {
+    border: none;
+    background-color: var(--Grey-2, #EAEAEA) ;
+    font-size: 18px;
+    width: 70%;
+}
+
 
 .global {
     display: flex;
@@ -255,10 +264,12 @@ body {
     padding: 22px 25px;
 }
 
-.footer-logo {
+.footer-title {
     display: flex;
-    
-
+    font-family: 'Roboto';
+    font-style: italic;
+    color: white;
+    font-size: 18px;
 }
 
 .footer-logo .logo {
