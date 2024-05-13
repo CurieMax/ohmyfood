@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+}
 
 .logo {
     display: flex;
@@ -39,7 +40,6 @@ body {
     justify-content: center;
     height: 50px;
     background-color: var(--Grey-2, #EAEAEA);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
     padding-left: 40px; 
 }
 
@@ -134,51 +134,40 @@ body {
     margin-top: 48px;
 }
 
+.function-list ol {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 25px;
+    margin: 0;
+    padding: 26px 12px 0px 12px;
+    
+}
+
+.function-list ol li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 29px 38px 28px 38px;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+    border-radius: 20px;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000;
+}
+
 .function-list {
     display: flex;
     justify-content: center;
     
 }
 
-.list {
-    display: flex;
-    width: 80%;
-    height: 72px;
-}
-
-.btn-list {
-    display: flex;
-    width: 100%;
-    border: none;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #F6F6F6;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-
-.number {
-    display: flex;
-    background-color: #9356DC;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    justify-content: center;
-    align-items: center;
-}
-
-.number-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    
-}
-
-.txt-list {
-    font-size: 16px;
-    font-weight: bold;
-}
 
 .restaurants {
     display: flex;
@@ -216,10 +205,27 @@ body {
 
 }
 
+.images-resto {
+    display: flex;
+    
+}
+
+.text-hover {
+    display: flex;
+    position: absolute;
+    margin-left: 70%;
+    text-decoration: none;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 7px 9px 7px 9px;
+    border-radius: 10px;
+}
+
 .resto-card img {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     height: 231px;
+    width: 100%;
 }
 
 .card-content {
