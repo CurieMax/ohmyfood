@@ -1,0 +1,38 @@
+
+    
+.header {
+    display: flex;
+    flex-direction: column;
+
+    .header-logo {
+        height: 63px;
+        justify-content: center;
+        align-items: center;
+            .logo {
+                height: 36px;            
+        }
+   
+    }
+
+    .location {
+        justify-content: center;
+        height: 50px;
+        background-color: var(--Grey-2, #EAEAEA);
+        padding-left: 40px;
+        .icon {
+            align-items: center;
+        }
+        .location-text {
+            align-items: center;
+            font-size: 16px;
+            color: var(--Grey, #353535);
+        }
+        .location-text input {
+            border: none;
+            background-color: var(--Grey-2, #EAEAEA) ;
+            font-size: 18px;
+            width: 70%;
+        }
+    }
+
+}

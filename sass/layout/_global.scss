@@ -1,0 +1,17 @@
+.global {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .explore {
+    height: auto;
+    background-color: #f6f6f6;
+    .section-title {
+      text-align: center;
+      font-size: 24px;
+    }
+    .p {
+      text-align: center;
+      margin-top: 0px;
+    }
+  }
+}
