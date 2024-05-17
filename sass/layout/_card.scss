@@ -1,49 +1,63 @@
-.restaurants-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 18px;
-    .cards {
-        text-decoration: none;
-        .resto-card {
-            width: 90%;
-            border-radius: 20%;
-            img {
-                position: relative;
-                object-fit: cover;
-                border-radius: 20px 20px 0px 0px;
-                height: 231px;
-                width: 100%;
-                .text-hover {
-                    position: absolute;
-                    background-color: #99e2d0;
-                    color: #008766;
-                    padding: 7px 9px 7px 9px;
-                    border-radius: 5px;
-                    right: 3%;
-                }
-            }
-            .card-content {
-                align-items: center;
-                background-color: white;
-                border-radius: 0px 0px 20px 20px;
-                justify-content: space-between;
-                padding-left: 13px;
-                padding-right: 25px;
-                .card-txt {
-                    flex-direction: column;
-                    .card-title {
-                        color: black;
-                        margin-top: 16px;
-                        margin-bottom: 0px;
-                    }
-                    .card-subtitle {
-                        color: black;
-                        margin-bottom: 12px;
-                        margin-top: 10px;
-                    }
-                }
-            }
-        }
-    }
+.restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.resto-card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 20%;
+}
+.images-resto {
+  display: flex;
+  position: relative;
+}
+.text-hover {
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 7px 9px 7px 9px;
+  border-radius: 5px;
+  right: 3%;
+  top: 8%;
+}
+.resto-card img {
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  height: 231px;
+  width: 100%;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  justify-content: space-between;
+  padding-left: 13px;
+  padding-right: 25px;
+}
+.card-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  color: black;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+.card-subtitle {
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 12px;
 }

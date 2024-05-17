@@ -1,37 +1,57 @@
 .function {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-bottom: 68px;
-    .section-title {
-        justify-content: flex-start;
-        margin-left: 20px;
-        margin-top: 48px;
-    }
-    .function-list {
-        justify-content: center;
-        ol {
-            align-items: flex-start;
-            flex-flow: row wrap;
-            gap: 25px;
-            margin: 0;
-            padding: 26px 12px 0px 12px;
-            li {
-                position: relative;
-                align-items: center;
-                gap: 20px;
-                flex-basis: 100%;
-                padding: 29px 38px 28px 38px;
-                background: #f6f6f6;
-                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-                border-radius: 20px;
-                font-family: "roboto";
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 18px;
-                color: #000;
-            }
-        }
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 6rem;
+  background-color: white;
 
-    }
+  .section-title {
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 48px;
+  }
+}
+.function-list {
+  display: flex;
+  justify-content: center;
+}
+.function-list ol {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 26px 12px 0px 12px;
+}
+
+.function-list ol li {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+  flex-basis: 80%;
+  padding: 29px 38px 28px 0px;
+  background: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 20px;
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000;
+}
+
+.function-list .number {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 30px;
+  height: 22px;
+  padding-top: 7px;
+  color: white;
+  right: 1rem;
 }

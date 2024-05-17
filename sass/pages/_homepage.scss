@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.explore {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  .section-title {
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+  }
+  p {
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Background, #f6f6f6);
+  padding-bottom: 50px;
+  .restaurant-title {
+    margin-top: 54px;
+    margin-left: 20px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

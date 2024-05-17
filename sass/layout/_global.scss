@@ -2,16 +2,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  .explore {
-    height: auto;
-    background-color: #f6f6f6;
-    .section-title {
-      text-align: center;
-      font-size: 24px;
-    }
-    .p {
-      text-align: center;
-      margin-top: 0px;
-    }
-  }
+  background-color: #f6f6f6;
+}
+.explore {
+  display: flex;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.explore .section-title {
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+}
+.explore p {
+  display: flex;
+  text-align: center;
+  margin-top: 0px;
 }
