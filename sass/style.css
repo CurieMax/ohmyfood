@@ -72,16 +72,12 @@
 }
 
 .like i {
-  font-weight: 500;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#9356dc, #ff79da);
   font-size: 25px;
   background-color: white;
-}
-
-.like i:hover {
-  box-sizing: border-box;
-  transform: scale(1.5);
-  color: #9356DC;
-  font-weight: 900;
 }
 
 .main-container {
