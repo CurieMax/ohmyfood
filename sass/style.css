@@ -19,6 +19,7 @@
   to {
     opacity: 0;
     display: none;
+    visibility: hidden;
   }
 }
 .spinner {
@@ -68,18 +69,41 @@
 
 .btn-resto:hover {
   transform: scale(1.1);
+  opacity: 0.9;
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .like i {
-  background-clip: text;
+  font-weight: 500;
+  font-size: 25px;
+  animation: fadeOut 2s;
+}
+
+.like i:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(#9356dc, #ff79da);
-  font-size: 25px;
-  background-color: white;
+  background-clip: text;
+  font-weight: 900;
+  animation: fadeIn 2s;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -365,6 +389,49 @@ body {
   line-height: normal;
 }
 
+@media (min-width: 769px) {
+  .function {
+    display: flex;
+    flex-direction: column;
+  }
+  .function .section-title {
+    margin-left: 130px;
+  }
+  .function-list ol {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 26px 12px 0px 12px;
+    flex-direction: column;
+    height: 30px;
+    align-content: center;
+  }
+  .restaurants .restaurant-title {
+    margin-top: 30px;
+    margin-left: 130px;
+  }
+  .restaurant-cards {
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .footer {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+  }
+  .footer-title {
+    order: 1;
+  }
+  .footer-section {
+    gap: 50px;
+    flex-direction: row;
+  }
+}
 * {
   font-family: "roboto";
 }
