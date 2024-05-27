@@ -362,21 +362,23 @@ body {
 .header-menu {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .return {
   display: flex;
   align-items: center;
-  position: relative;
-  right: 7rem;
+  position: absolute;
+  left: 2rem;
 }
 
 .return i {
   font-size: 25px;
+  color: #000;
 }
 
 .image-resto {
-  display: flex;
+  display: block;
   object-fit: cover;
 }
 
@@ -386,9 +388,16 @@ body {
   width: 100%;
 }
 
+.global {
+  margin-top: -40px;
+  border-radius: 2rem 2rem 0 0;
+}
+
 .restaurant-title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 1rem;
 }
 
 .like {
@@ -402,6 +411,8 @@ body {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   border-radius: 25px;
 }
 
@@ -414,6 +425,7 @@ body {
 .choice .title {
   display: flex;
   margin-left: 20px;
+  text-decoration: underline;
 }
 
 .choice .title h3 {
@@ -441,16 +453,19 @@ body {
   border-radius: 15px;
   align-items: center;
   gap: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .card-content .list-title {
   margin: 0px;
+  align-self: stretch;
 }
 
 .description {
   display: flex;
+  align-self: stretch;
+  justify-content: space-between;
 }
 
 .description p {
@@ -460,13 +475,14 @@ body {
 .price {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .btn-explore {
   margin: 0px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 @media (min-width: 769px) {
