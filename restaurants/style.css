@@ -422,10 +422,17 @@ body {
   flex-direction: column;
 }
 
+.choice {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-self: center;
+}
+
 .choice .title {
   display: flex;
-  margin-left: 20px;
-  text-decoration: underline;
+  text-decoration: underline solid 3px #99E2D0;
+  text-underline-offset: 2px;
 }
 
 .choice .title h3 {
@@ -448,7 +455,7 @@ body {
 .card-content {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 95%;
   justify-content: center;
   border-radius: 15px;
   align-items: center;
