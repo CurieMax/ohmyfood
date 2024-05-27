@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.return {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 7rem;
+}
+
+.return i {
+  font-size: 25px;
+}
+
+.image-resto {
+  display: flex;
+  object-fit: cover;
+}
+
+.image-resto img {
+  object-fit: cover;
+  height: 275px;
+  width: 100%;
+}
+
+.restaurant-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-title .section-title {
+  font-size: 28px;
+  font-family: "Shrikhand";
+}
+
+.menu {
+  border-radius: 25px;
+}
+
+.menu-card {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.choice .title {
+    display: flex;
+    margin-left: 20px;
+}
+
+.choice .title h3{
+  color: #000;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: center;
+  gap: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card-content .list-title {
+    margin: 0px;
+
+}
+
+.description {
+  display: flex;
+}
+
+.description p {
+    margin: 0px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.btn-explore {
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #F6F6F6;
+}
