@@ -3,7 +3,20 @@
   flex-direction: column;
   justify-content: center;
   gap: 18px;
+  animation: appear 3s;
 }
+
+@keyframes appear {
+  0% {
+    transform: translateY(50%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
+
 .cards {
   display: flex;
   justify-content: center;
