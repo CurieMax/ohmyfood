@@ -7,14 +7,14 @@
         margin-left: 130px;
     }
     .function-list ol {
-        display: flex;
+        display: grid;
         justify-content: center;
         gap: 40px;
         margin: 0;
         padding: 26px 12px 0px 12px;
-        flex-direction: column;
         height: 30px;
         align-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .restaurants .restaurant-title {
