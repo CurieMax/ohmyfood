@@ -33,15 +33,16 @@
     .footer {
         flex-direction: row;
         gap: 40px;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .footer-title {
         order: 1;
+        margin-left: 40px;
     }
 
     .footer-section {
-        gap: 50px;
+        gap: 40px;
         flex-direction: row;
     }
 }

@@ -72,8 +72,19 @@ body {
   flex-direction: column;
   width: 90%;
   align-self: center;
-  animation: appear 3s;
+  .choice-1 {
+    animation: appear 1.5s;
+  }
+  
+  .choice-2 {
+    animation: appear 2.5s;
+  }
+  
+  .choice-3 {
+    animation: appear 3.5s;
+  }
 }
+
 @keyframes appear {
   0% {
     transform: translateY(50%); 
@@ -84,6 +95,7 @@ body {
     opacity: 1;
   }
 }
+
 
 .choice .title {
   display: flex;

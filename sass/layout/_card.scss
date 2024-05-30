@@ -27,7 +27,25 @@
   flex-direction: column;
   width: 90%;
   border-radius: 20%;
+  
 }
+
+.resto-card:hover {
+  animation: fadeIn 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
+
 .images-resto {
   display: flex;
   position: relative;
