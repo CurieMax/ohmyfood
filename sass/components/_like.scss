@@ -9,7 +9,8 @@
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   font-weight: 900;
-  animation: fadeIn 2s;
+  animation: fade 1s;
+
   //*animation: check 1s ease;*//
 }
 
@@ -22,7 +23,7 @@
   100% { transform: scale(1); }
 }
 
-@keyframes fadeIn {
+@keyframes fade {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
