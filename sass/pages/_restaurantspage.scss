@@ -146,6 +146,10 @@ body {
 .card-content .list-title {
   margin: 0px;
   align-self: stretch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  width: 80%;
 }
 
 .description {
@@ -157,10 +161,14 @@ body {
 
 .description p {
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  width: 80%;
 }
 
 .price {
-  position: absolute;
+  display: block;
   right: 1em;
   font-weight: bold;
 }
