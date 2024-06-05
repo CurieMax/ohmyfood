@@ -1,40 +1,29 @@
 .like i {
-  font-weight: 500;
   font-size: 25px;
 }
 
-.like i:hover {
+.like .empty {
+  opacity: 1;
+  font-size: 24px;
+}
+
+.like .full {
+  position: relative;
+  font-size: 26px;
+  opacity: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
-  font-weight: 900;
-  animation: fade 1s;
-
-  //*animation: check 1s ease;*//
-}
-
-
-@keyframes check {
-  30% { transform: scale(1.2); }
-  40%, 60% { transform: rotate(-20deg) scale(1.2); }
-  50% { transform: rotate(20deg) scale(1.2); }
-  70% { transform: rotate(0deg) scale(1.2); }
-  100% { transform: scale(1); }
-}
-
-@keyframes fade {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@keyframes fadeOut {
-  from {opacity: 1;
+  transition-duration: 1s;
+  left: 29px;
+  top: 1.26px;
+  &:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(#9356dc, #ff79da);
     background-clip: text;
-    font-weight: 900;}
-  to {opacity: 0;
-      }
+    transition-duration: 1s;
+    opacity: 1;
+  }
 }

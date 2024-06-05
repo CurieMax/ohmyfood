@@ -58,6 +58,7 @@
   background: var(--Button-Gradient, linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   padding: 18px;
+  transition-duration: 1s;
 }
 
 .btn-resto h2 {
@@ -68,70 +69,40 @@
 }
 
 .btn-resto:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
 .like i {
-  font-weight: 500;
   font-size: 25px;
 }
 
-.like i:hover {
+.like .empty {
+  opacity: 1;
+  font-size: 24px;
+}
+
+.like .full {
+  position: relative;
+  font-size: 26px;
+  opacity: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
-  font-weight: 900;
-  animation: fade 1s;
+  transition-duration: 1s;
+  left: 29px;
+  top: 1.26px;
+}
+.like .full:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  transition-duration: 1s;
+  opacity: 1;
 }
 
-@keyframes check {
-  30% {
-    transform: scale(1.2);
-  }
-  40%, 60% {
-    transform: rotate(-20deg) scale(1.2);
-  }
-  50% {
-    transform: rotate(20deg) scale(1.2);
-  }
-  70% {
-    transform: rotate(0deg) scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(#9356dc, #ff79da);
-    background-clip: text;
-    font-weight: 900;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -211,6 +182,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  z-index: 0;
 }
 
 .header-logo {
@@ -218,6 +190,8 @@
   height: 63px;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  z-index: 0;
 }
 
 .logo {
@@ -232,6 +206,7 @@
   height: 50px;
   background-color: var(--Grey-2, #eaeaea);
   padding-left: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .icon {
@@ -276,6 +251,9 @@
   justify-content: center;
   text-decoration: none;
 }
+.cards a {
+  text-decoration: none;
+}
 
 .resto-card {
   display: flex;
@@ -284,21 +262,6 @@
   border-radius: 20%;
 }
 
-.resto-card:hover {
-  animation: fadeIn 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0.9;
-    transform: scale(1.1);
-  }
-}
 .images-resto {
   display: flex;
   position: relative;
@@ -324,18 +287,17 @@
 }
 
 .card-content {
+  justify-content: space-between;
   display: flex;
   align-items: center;
   background-color: white;
   border-radius: 0px 0px 20px 20px;
-  justify-content: space-between;
-  padding-left: 13px;
-  padding-right: 25px;
 }
 
 .card-txt {
   display: flex;
   flex-direction: column;
+  margin-left: 13px;
 }
 
 .card-title {
@@ -348,6 +310,10 @@
   color: black;
   margin-top: 0px;
   margin-bottom: 12px;
+}
+
+.like {
+  margin-right: 33px;
 }
 
 .function {
@@ -444,6 +410,15 @@ body {
 }
 
 @media (min-width: 769px) {
+  .header-logo {
+    box-shadow: none;
+  }
+  .location {
+    box-shadow: none;
+  }
+  .restaurant-title {
+    justify-content: center;
+  }
   .restaurants .restaurant-title {
     margin-top: 30px;
     margin-left: 130px;
@@ -455,6 +430,10 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-left: 100px;
     margin-right: 100px;
+  }
+  .btn-explore {
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .footer {
     flex-direction: row;

@@ -18,6 +18,7 @@
   );
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   padding: 18px;
+  transition-duration: 1s;
 }
 .btn-resto h2 {
   font-size: 16px;
@@ -27,16 +28,7 @@
 }
 
 .btn-resto:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
-  //*animation: fadeIn 1s;*//
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
