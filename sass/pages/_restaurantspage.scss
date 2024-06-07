@@ -135,14 +135,17 @@ body {
 
 .card-content {
   display: flex;
-
   width: 100%;
-
   border-radius: 15px;
   align-items: center;
-
   height: 69px;
   overflow: hidden;
+  &:hover {
+    .item-check {
+      margin-right: 0px;
+      opacity: 1;
+    }
+  }
 }
 
 .card-content .list-title {
@@ -172,6 +175,10 @@ body {
   font-weight: bold;
 }
 
+.btn-resto {
+  width: 186px;
+}
+
 .btn-explore {
   margin: 0px;
   padding-top: 40px;
@@ -199,12 +206,6 @@ body {
   opacity: 0;
 }
 
-.card-content:hover {
-  .item-check {
-    margin-right: 0px;
-    opacity: 1;
-  }
-}
 
 .text-container {
   display: flex;

@@ -19,7 +19,7 @@
   transition-duration: 1s;
 }
 
-.btn-resto h2 {
+.btn-resto .btn-title {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -385,6 +385,10 @@ body {
   height: 69px;
   overflow: hidden;
 }
+.card-content:hover .item-check {
+  margin-right: 0px;
+  opacity: 1;
+}
 
 .card-content .list-title {
   margin: 0px;
@@ -413,6 +417,10 @@ body {
   font-weight: bold;
 }
 
+.btn-resto {
+  width: 186px;
+}
+
 .btn-explore {
   margin: 0px;
   padding-top: 40px;
@@ -437,11 +445,6 @@ body {
   transition-duration: 1s;
   margin-right: -60px;
   opacity: 0;
-}
-
-.card-content:hover .item-check {
-  margin-right: 0px;
-  opacity: 1;
 }
 
 .text-container {
@@ -475,14 +478,6 @@ body {
     margin-top: 30px;
     margin-left: 130px;
   }
-  .restaurant-cards {
-    display: grid;
-    justify-content: center;
-    gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
   .btn-explore {
     margin-left: 15%;
     margin-right: 15%;
@@ -491,6 +486,7 @@ body {
     flex-direction: row;
     gap: 40px;
     justify-content: flex-end;
+    padding: 30px 25px;
   }
   .footer-title {
     order: 1;
@@ -518,6 +514,14 @@ body {
     height: 30px;
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .restaurant-cards {
+    display: grid;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 * {
