@@ -384,6 +384,7 @@ body {
   align-items: center;
   height: 69px;
   overflow: hidden;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
 }
 .card-content:hover .item-check {
   margin-right: 0px;
