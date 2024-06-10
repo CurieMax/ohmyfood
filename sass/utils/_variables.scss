@@ -1,11 +1,5 @@
 @media (min-width: 769px) {
-  .header-logo {
-    box-shadow: none;
-  }
-
-  .location {
-    box-shadow: none;
-  }
+  
 
   .restaurant-title {
     justify-content: center;
@@ -38,6 +32,13 @@
 }
 
 @media (min-width: 1024px) {
+  .header-logo {
+    box-shadow: none;
+  }
+
+  .location {
+    box-shadow: none;
+  }
   .function {
     display: flex;
     flex-direction: column;
