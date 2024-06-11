@@ -43,3 +43,7 @@
     background-color: var(--Grey-2, #eaeaea);
   }
 }
+
+::placeholder {
+  color: black;
+}

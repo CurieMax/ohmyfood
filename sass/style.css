@@ -71,6 +71,7 @@
 .btn-resto:hover {
   opacity: 0.8;
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .like i {
@@ -101,6 +102,7 @@
   background-clip: text;
   transition-duration: 1s;
   opacity: 1;
+  cursor: pointer;
 }
 
 .main-container {
@@ -228,6 +230,10 @@
   background-color: var(--Grey-2, #eaeaea);
 }
 
+::placeholder {
+  color: black;
+}
+
 .restaurant-cards {
   display: flex;
   flex-direction: column;
@@ -320,7 +326,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-bottom: 6rem;
+  padding-bottom: 68px;
   background-color: white;
 }
 .function .section-title {
@@ -351,7 +357,7 @@
   align-items: center;
   gap: 20px;
   flex-basis: 80%;
-  padding: 29px 38px 28px 0px;
+  padding: 20px 38px 21px 0px;
   background: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
@@ -373,6 +379,7 @@
   padding-top: 7px;
   color: white;
   right: 1rem;
+  margin-right: -15px;
 }
 
 body {
@@ -429,7 +436,7 @@ body {
     flex-direction: row;
     gap: 40px;
     justify-content: flex-end;
-    padding: 30px 25px;
+    padding-top: 30px;
   }
   .footer-title {
     order: 1;
